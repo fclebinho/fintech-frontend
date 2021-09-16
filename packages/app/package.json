@@ -1,9 +1,9 @@
 {
-  "name": "@namespace/react-app",
+  "name": "@fintech/app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@namespace/components": "^0.1.0"
+    "@fintech/components": "^0.1.0"
   },
   "scripts": {
     "start": "react-app-rewired start",

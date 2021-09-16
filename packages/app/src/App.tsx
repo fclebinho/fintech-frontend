@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { Button, Input } from '@namespace/components';
+import { Button, Input } from '@fintech/components';
 
 const App = (): ReactElement => {
   return (

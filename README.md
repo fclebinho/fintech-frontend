@@ -8,7 +8,7 @@ Running this project should be very easy, quick and automatic using monorepo app
 
 - Install [lerna](https://github.com/lerna/lerna) first: `yarn global add lerna`
 - Run `yarn bootstrap` to install all dependencies and setup monorepo symlinks using [lerna](https://github.com/lerna/lerna).
-- Run `yarn start` to start development server with all packages included, by default you'll run `@namespace/react-app`.
+- Run `yarn start` to start development server with all packages included, by default you'll run `@fintech/react-app`.
 - Run `yarn test` to test all packages simultaneously.
 
 ## Setup explained
@@ -37,16 +37,16 @@ Running this project should be very easy, quick and automatic using monorepo app
 
 ### Included sample packages
 
-- **@namespace/components**
+- **@fintech/components**
 
   - [React](https://github.com/facebook/react) components library.
   - Built as `cjs` (Node consumption) and `esm` (bundler consumption).
   - All componenents are linked dynamically without rebuilding or compiling.
 
-- **@namespace/react-app**
+- **@fintech/react-app**
   - [React](https://github.com/facebook/react) application.
   - Built with minimal [CRA](https://github.com/facebook/create-react-app) setup.
-  - Uses the `@namespace/components` package (also inside monorepo).
+  - Uses the `@fintech/components` package (also inside monorepo).
 
 ### Basic structure and configurations
 
@@ -86,10 +86,10 @@ New `dependencies` can be added to the root `package.json` using npm:
 yarn add <package name> -W [-D]
 ```
 
-Some packages depend on sibling packages within the monorepo. For example, in this repo, `@namespace/react-app` depends on `@namespace/components`. This relationship is just a normal dependency, and can be described in the `package.json` of `@namespace/react-app` like so:
+Some packages depend on sibling packages within the monorepo. For example, in this repo, `@fintech/react-app` depends on `@fintech/components`. This relationship is just a normal dependency, and can be described in the `package.json` of `@fintech/react-app` like so:
 
 ```json
 "dependencies": {
-  "@namespace/components": "<package version>"
+  "@fintech/components": "<package version>"
 }
 ```
