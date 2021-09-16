@@ -58,7 +58,7 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "airbnb",
+      "airbnb-typescript",
       "plugin:react/recommended",
       "plugin:@typescript-eslint/recommended",
       "prettier/@typescript-eslint",
@@ -66,6 +66,8 @@
       "plugin:prettier/recommended"
     ],
     "rules": {
+      "react/jsx-props-no-spreading": "off",
+      "react/prop-types": "off",
       "@typescript-eslint/no-explicit-any": [
         "error"
       ],
